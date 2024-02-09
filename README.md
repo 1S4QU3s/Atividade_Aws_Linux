@@ -103,8 +103,11 @@ A atividade inclui a geração de uma chave pública de acesso, criação de uma
     ```
 - Salvar o arquivo `/etc/fstab`.
 - Criar um novo diretório para o usuário isaque usando o comando `sudo mkdir /mnt/nfs/isaque`.
+-  Após configurar executar o comando " sudo service nfs status" para verificar de obteve êxito:
 
-### Configurar o Apache.
+![image](https://github.com/1S4QU3s/Atividade_Aws_Linux/assets/159395767/94d044da-a34c-4810-85c4-f88f67d3ffc3)
+
+  ### Configurar o Apache.
 
 - Executar o comando `sudo yum update -y` para atualizar o sistema.
 - Executar o comando `sudo yum install httpd -y` para instalar o apache.
@@ -113,6 +116,10 @@ A atividade inclui a geração de uma chave pública de acesso, criação de uma
 - Executar o comando `sudo systemctl status httpd` para verificar o status do apache.
 - Configurações adicionais do apache podem ser feitas no arquivo `/etc/httpd/conf/httpd.conf`.
 - para parar o apache, executar o comando `sudo systemctl stop httpd`.
+
+![image](https://github.com/1S4QU3s/Atividade_Aws_Linux/assets/159395767/efd71bab-06fc-40e3-b9bb-f467cedf39b3)
+
+
 
 ### Configurar o script de validação.
 
@@ -148,4 +155,14 @@ A atividade inclui a geração de uma chave pública de acesso, criação de uma
     ```
 - Salve o arquivo de cronjob.
 - Execute o comando `crontab -l` para verificar se o cronjob foi configurado corretamente.
+
+- Agora navegue até o diretório onde estão as 2 saidas do script e execute "cat" nos dois arquivos:
+  
+  ![image](https://github.com/1S4QU3s/Atividade_Aws_Linux/assets/159395767/7db44afe-3de8-49c1-ba81-071f60f8cca9)
+
+- o resultado vai ser listado abaixo:
+
+  ![image](https://github.com/1S4QU3s/Atividade_Aws_Linux/assets/159395767/f40c5f4c-9f38-4494-b045-7e2a839725cd)
+
+
 
